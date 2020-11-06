@@ -89,13 +89,8 @@ function assessment(userName){
 
     result = result.replace(/{userName}/g, userName);
     return result;
-}
-
-userNameInput.onkeydown = event => {
-    if (event.key === 'Enter') {
-        assessmentButton.onclick();
     }
-};
+
 //テストコード
 console.assert(
     assessment('太郎') ===
